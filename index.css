@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(214, 169, 139);
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: black;
+    font-size: 40px;
+    padding: 10px;
+}
+
+h2 {
+    color: rgb(150, 56, 33);
+    padding: 8px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 4px 0;
+}
+
+table {
+    border: 2px solid black;
+}
+
+th {
+    background-color: rgb(150, 56, 33);
+    color: white;
+    padding: 10px;
+}
+
+td {
+    background-color: white;
+    padding: 10px;
+}
+
+caption {
+    color: rgb(150, 56, 33);
+    padding: 10px;
+    font-size: 18px;
+}
+
+.heading {
+    font-size: 40px;
+    text-align: center;
+}
+
+.class1 {
+    text-align: center;
+    padding: 5px;
+}
+
+.class2 {
+    text-align: center;
+    color: black;
+    padding: 10px;
+    background-color: rgb(230, 200, 180);
+}
+
+.button {
+    background-color: rgb(150, 56, 33);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.section-title {
+    color: rgb(150, 56, 33);
+    padding: 6px 0;
+}
+
+.highlight {
+    background-color: yellow;
+    color: black;
+    padding: 8px;
+}
+
+.event-info {
+    background-color: rgb(230, 200, 180);
+    color: black;
+    padding: 10px;
+}
+
+.event-card {
+    background-color: white;
+    color: black;
+    border: 2px solid rgb(150, 56, 33);
+    padding: 15px;
+    margin: 10px;
+}
+
+.featured {
+    background-color: rgb(255, 235, 210);
+    border: 3px solid rgb(150, 56, 33);
+}
+
+.event-image {
+    width: 300px;
+    height: auto;
+    border: 3px solid rgb(150, 56, 33);
+    padding: 5px;
+    margin: 10px;
+}
+
+.form {
+    text-align: center;
+    background-color: rgb(21, 248, 191);
+    padding: 20px;
+}
+
+.form-group {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(150, 56, 33);
+}
+
+.form-control {
+    padding: 6px;
+    margin: 5px 0;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.submit-btn {
+    background-color: rgb(150, 56, 33);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#about {
+    background-color: rgb(230, 200, 180);
+    border: 2px solid rgb(150, 56, 33);
+    padding: 20px;
+    margin: 15px;
+}
+
+#schedule {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin: 15px;
+}
+
+#register {
+    background-color: rgb(21, 248, 191);
+    color: black;
+    padding: 20px;
+    margin: 15px;
+}
+
+#event-schedule {
+    background-color: white;
+    padding: 20px;
+    margin: 15px;
+}
