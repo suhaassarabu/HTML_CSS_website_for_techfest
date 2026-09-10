@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai University Tech Fest 2026</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-
     <header>
-        <h1>Sai University Tech Fest 2026</h1>
+        <h1 class="heading">Sai University Tech Fest 2026</h1>
 
-        <p>
+        <p class="class1">
             <strong>Innovate - Build - Compete</strong>
         </p>
 
-        <nav>
-            <a href="#about">About The Event</a> |
-            <a href="#schedule">Schedule</a> |
-            <a href="#competitions">Competitions</a> |
-            <a href="#register">Register For The Event</a> 
+        <nav class="class2">
+            <a href="#about"><button class="button">About The Event</button></a> 
+            <a href="#schedule"><button class="button">Schedule</button></a> 
+            <a href="#competitions"><button class="button">Competitions</button></a> 
+            <a href="#register"><button class="button">Register For The Event</button></a> 
         </nav>
     </header>
 
@@ -29,26 +29,36 @@
 
         <section id="about">
 
-            <h2>About The Event</h2>
+            <h2 class="section-title">About The Event</h2>
 
             <h3>Sai University Tech Fest 2026</h3>
 
             <p>
                 Hi Everyone. In our university, we are conducting a
                 <strong>Tech Fest</strong> this year.
+            </p>
+            <p>    
                 In this event, participants are going to
                 <em>Innovate, Build and Compete</em> with others.
+            </p>
+            <p style="color: rgb(150, 56, 33); font-weight: bold;">
                 This competition will be held on this
                 <mark><i>Sunday</i></mark>
                 in our university.
+            </p>
+            <p class="highlight">
                 Everyone is heartily invited for this event.
+            </p>
+
+            <p class="event-info">
+                Date: This Sunday &nbsp;|&nbsp; Venue: Sai University Main Campus, Chennai
             </p>
 
         </section>
 
         <section id="schedule">
 
-            <h2>Event Highlights</h2>
+            <h2 class="section-title">Event Highlights</h2>
 
             <ul>
                 <li>Inauguration</li>
@@ -59,7 +69,7 @@
             </ul>
 
 
-            <h2>Event Participation</h2>
+            <h2 class="section-title">Event Participation</h2>
 
             <ol>
                 <li>Visit the Registration Section</li>
@@ -73,35 +83,33 @@
 
         <section id="competitions">
 
-            <h2>Competitions</h2>
+            <h2 class="section-title">Competitions</h2>
 
-            <ul>
-                <li>
-                    <strong>Coding Challenge</strong>
-                    <p>Test your programming and problem-solving skills.</p>
-                </li>
+            <article class="event-card featured">
+                <strong>Coding Challenge</strong>
+                <p>Test your programming and problem-solving skills.</p>
+            </article>
 
-                <li>
-                    <strong>Web Design Challenge</strong>
-                    <p>Design and develop an attractive web page using HTML.</p>
-                </li>
+            <article class="event-card">
+                <strong>Web Design Challenge</strong>
+                <p>Design and develop an attractive web page using HTML.</p>
+            </article>
 
-                <li>
-                    <strong>Technology Quiz</strong>
-                    <p>Answer interesting questions related to technology and computing.</p>
-                </li>
+            <article class="event-card">
+                <strong>Technology Quiz</strong>
+                <p>Answer interesting questions related to technology and computing.</p>
+            </article>
 
-                <li>
-                    <strong>Innovation Showcase</strong>
-                    <p>Present your innovative ideas and technology projects.</p>
-                </li>
-            </ul>
+            <article class="event-card">
+                <strong>Innovation Showcase</strong>
+                <p>Present your innovative ideas and technology projects.</p>
+            </article>
 
         </section>
 
         <section id="event-schedule">
 
-            <h2>Event Schedule</h2>
+            <h2 class="section-title">Event Schedule</h2>
 
             <table border="1">
 
@@ -168,217 +176,220 @@
 
         </section>
 
-        <section id="register">
+        <section id="register" class="form">
 
-            <h2>Event Registration Form</h2>
+            <h2 class="section-title">Event Registration Form</h2>
 
             <form>
 
-                <label for="fullname">Full Name:</label>
-                <input
-                    type="text"
-                    id="fullname"
-                    name="fullname"
-                    required>
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input
+                        class="form-control"
+                        type="text"
+                        id="fullname"
+                        name="fullname"
+                        required>
+                </div>
 
-                <br><br>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input
+                        class="form-control"
+                        type="email"
+                        id="email"
+                        name="email"
+                        required>
+                </div>
 
-                <label for="email">Email Address:</label>
-                <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number:</label>
+                    <input
+                        class="form-control"
+                        type="tel"
+                        id="mobile"
+                        name="mobile"
+                        required>
+                </div>
 
-                <br><br>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input
+                        class="form-control"
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="16"
+                        max="30"
+                        required>
+                </div>
 
-                <label for="mobile">Mobile Number:</label>
-                <input
-                    type="tel"
-                    id="mobile"
-                    name="mobile"
-                    required>
+                <div class="form-group">
+                    <label for="event">Select Event:</label>
+                    <select
+                        class="form-control"
+                        id="event"
+                        name="event"
+                        required>
 
-                <br><br>
+                        <option value="">
+                            -- Select an Event --
+                        </option>
 
-                <label for="age">Age:</label>
-                <input
-                    type="number"
-                    id="age"
-                    name="age"
-                    min="16"
-                    max="30"
-                    required>
+                        <option value="coding">
+                            Coding Challenge
+                        </option>
 
-                <br><br>
+                        <option value="web-design">
+                            Web Design Challenge
+                        </option>
 
-                <label for="event">Select Event:</label>
+                        <option value="tech-quiz">
+                            Technology Quiz
+                        </option>
 
-                <select
-                    id="event"
-                    name="event"
-                    required>
+                        <option value="innovation">
+                            Innovation Showcase
+                        </option>
 
-                    <option value="">
-                        -- Select an Event --
-                    </option>
+                    </select>
+                </div>
 
-                    <option value="coding">
-                        Coding Challenge
-                    </option>
+                <div class="form-group">
+                    <p>
+                        <strong>Participation Type:</strong>
+                    </p>
 
-                    <option value="web-design">
-                        Web Design Challenge
-                    </option>
+                    <input
+                        type="radio"
+                        id="individual"
+                        name="participation"
+                        value="individual"
+                        required>
 
-                    <option value="tech-quiz">
-                        Technology Quiz
-                    </option>
-
-                    <option value="innovation">
-                        Innovation Showcase
-                    </option>
-
-                </select>
-
-                <br><br>
-
-                <p>
-                    <strong>Participation Type:</strong>
-                </p>
-
-                <input
-                    type="radio"
-                    id="individual"
-                    name="participation"
-                    value="individual"
-                    required>
-
-                <label for="individual">
-                    Individual
-                </label>
-
-
-                <input
-                    type="radio"
-                    id="team"
-                    name="participation"
-                    value="team">
-
-                <label for="team">
-                    Team
-                </label>
-
-                <br><br>
-
-                <p>
-                    <strong>Select Your Skills:</strong>
-                </p>
-
-                <input
-                    type="checkbox"
-                    id="programming"
-                    name="skills"
-                    value="programming">
-
-                <label for="programming">
-                    Programming
-                </label>
-
-                <br>
+                    <label for="individual">
+                        Individual
+                    </label>
 
 
-                <input
-                    type="checkbox"
-                    id="web"
-                    name="skills"
-                    value="web">
+                    <input
+                        type="radio"
+                        id="team"
+                        name="participation"
+                        value="team">
 
-                <label for="web">
-                    Web Development
-                </label>
+                    <label for="team">
+                        Team
+                    </label>
+                </div>
 
-                <br>
+                <div class="form-group">
+                    <p>
+                        <strong>Select Your Skills:</strong>
+                    </p>
 
+                    <input
+                        type="checkbox"
+                        id="programming"
+                        name="skills"
+                        value="programming">
 
-                <input
-                    type="checkbox"
-                    id="database"
-                    name="skills"
-                    value="database">
+                    <label for="programming">
+                        Programming
+                    </label>
 
-                <label for="database">
-                    Database
-                </label>
-
-                <br>
-
-
-                <input
-                    type="checkbox"
-                    id="ai"
-                    name="skills"
-                    value="ai">
-
-                <label for="ai">
-                    Artificial Intelligence
-                </label>
-
-                <br>
+                    <br>
 
 
-                <input
-                    type="checkbox"
-                    id="design"
-                    name="skills"
-                    value="design">
+                    <input
+                        type="checkbox"
+                        id="web"
+                        name="skills"
+                        value="web">
 
-                <label for="design">
-                    UI/UX Design
-                </label>
+                    <label for="web">
+                        Web Development
+                    </label>
 
-                <br><br>
+                    <br>
 
-                <label for="date">
-                    Preferred Event Date:
-                </label>
 
-                <input
-                    type="date"
-                    id="date"
-                    name="date"
-                    required>
+                    <input
+                        type="checkbox"
+                        id="database"
+                        name="skills"
+                        value="database">
 
-                <br><br>
+                    <label for="database">
+                        Database
+                    </label>
 
-                <label for="portfolio">
-                    Portfolio URL:
-                </label>
+                    <br>
 
-                <input
-                    type="url"
-                    id="portfolio"
-                    name="portfolio"
-                    placeholder="https://example.com">
 
-                <br><br>
+                    <input
+                        type="checkbox"
+                        id="ai"
+                        name="skills"
+                        value="ai">
 
-                <label for="comments">
-                    Comments / Additional Information:
-                </label>
+                    <label for="ai">
+                        Artificial Intelligence
+                    </label>
 
-                <br>
+                    <br>
 
-                <textarea
-                    id="comments"
-                    name="comments"
-                    rows="5"
-                    cols="40"
-                    placeholder="Enter your message here..."></textarea>
 
-                <br><br>
+                    <input
+                        type="checkbox"
+                        id="design"
+                        name="skills"
+                        value="design">
 
-                <button type="submit">
+                    <label for="design">
+                        UI/UX Design
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label for="date">
+                        Preferred Event Date:
+                    </label>
+                    <input
+                        class="form-control"
+                        type="date"
+                        id="date"
+                        name="date"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="portfolio">
+                        Portfolio URL:
+                    </label>
+                    <input
+                        class="form-control"
+                        type="url"
+                        id="portfolio"
+                        name="portfolio"
+                        placeholder="https://example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">
+                        Comments / Additional Information:
+                    </label>
+                    <br>
+                    <textarea
+                        class="form-control"
+                        id="comments"
+                        name="comments"
+                        rows="5"
+                        cols="40"
+                        placeholder="Enter your message here..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
                     Submit Registration
                 </button>
 
@@ -392,35 +403,20 @@
 
         <section>
 
-            <h2>Tech Fest Poster</h2>
+            <h2 class="section-title">Tech Fest Poster</h2>
 
             <img
-                src="images/Screenshot 2026-09-03 164743.png"
+                class="event-image"
+                src="poster.png"
                 alt="Sai University Tech Fest 2026"
                 height="500"
                 width="500">
 
         </section>
 
-        <section id="video">
-
-            <h2>Tech Fest 2026 Video</h2>
-
-            <iframe
-                width="600"
-                height="350"
-                src="https://youtu.be/kUMe1FH4CHE?si=uIgq_mQInmiELCZJ"
-                title="Sai University Tech Fest 2026"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-
-        </section>
-
     </main>
 
-    <footer>
+    <footer class="footer">
 
         <hr>
 
@@ -436,9 +432,11 @@
 
         <p>
             Email:
-            <a href="mailto:techfest@saiuniversity.edu.in">
-                techfest@saiuniversity.edu.in
-            </a>
+            <span style="text-decoration: underline;">
+                <a href="mailto:techfest@saiuniversity.edu.in">
+                    techfest@saiuniversity.edu.in
+                </a>
+            </span>
         </p>
 
         <p>
